@@ -61,7 +61,7 @@ terminal._log = function(...messages) {
 };
 
 // Implement own send function to log outcoming data to the terminal.
-const send = (data) => {7
+const send = (data) => {
  
   terminal.send(data).
       then(() => logToTerminal(data, 'out')).
