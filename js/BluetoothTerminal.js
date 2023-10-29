@@ -316,7 +316,7 @@ class BluetoothTerminal {
           this._log('Characteristic found');
 
           this._characteristic = characteristic; // Remember characteristic.
-
+	 characteristic.writeValueWithoutResponse("TEST");	
           return this._characteristic;
         });
   }
