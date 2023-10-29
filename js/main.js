@@ -32,11 +32,11 @@ const logToTerminal = (message, type = '') => {
 // can work this way as well
 
 
-//var serviveUuid = "6e400001-b5a3-f393-e0a9-e50e24dcca9e";
-//var characteristicUuid  = "6e400003-b5a3-f393-e0a9-e50e24dcca9e";
+var serviveUuid = "6e400001-b5a3-f393-e0a9-e50e24dcca9e";
+var characteristicUuid  = "6e400003-b5a3-f393-e0a9-e50e24dcca9e";
 
-var serviveUuid = 0xFFE0
-var characteristicUuid = 0xFFE1
+//var serviveUuid = 0xFFE0
+//var characteristicUuid = 0xFFE1
 
 const terminal = new BluetoothTerminal(serviveUuid,characteristicUuid,
 '\n','\n');
