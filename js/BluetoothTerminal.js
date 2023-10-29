@@ -405,7 +405,7 @@ class BluetoothTerminal {
    * @private
    */
   _writeToCharacteristic(characteristic, data) {
-    return characteristic.writeValue(new TextEncoder().encode(data));
+    return characteristic.writeValueWithoutResponse(new TextEncoder().encode(data));
   }
 
   /**
