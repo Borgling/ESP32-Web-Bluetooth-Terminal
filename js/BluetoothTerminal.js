@@ -316,7 +316,6 @@ class BluetoothTerminal {
           this._log('Characteristic found');
 
           this._characteristic = characteristic; // Remember characteristic.
-	 characteristic.writeValueWithoutResponse(new TextEncoder().encode("TEST"));	
           return this._characteristic;
         });
   }
@@ -405,7 +404,7 @@ class BluetoothTerminal {
    * @private
    */
   _writeToCharacteristic(characteristic, data) {
-    return characteristic.writeValueWithoutResponse(new TextEncoder().encode(data));
+    return characteristic.writeValue(new TextEncoder().encode(data));
   }
 
   /**
